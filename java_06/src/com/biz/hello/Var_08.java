@@ -33,7 +33,7 @@ public class Var_08 {
 		
 
 		
-		
+		}
 		
 	}
 	
