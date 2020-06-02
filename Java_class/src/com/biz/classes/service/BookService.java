@@ -1,4 +1,4 @@
-package com.biz.classis.service;
+package com.biz.classes.service;
 
 import com.biz.classis.model.BookVO;
 
@@ -11,8 +11,7 @@ public class BookService {
 		String s_line = lineService.single(50);
 		System.out.println(d_line);
 		System.out.println("도서목록");
-		System.out.println(s_line);
-		System.out.println("ISBN/t도서명\t저자\t출판사\t가격");
+	
 		// 배열.length : 배열의 개수를 알려주는 변수
 		for(int i =0; i< bookList.length; i ++) {
 			System.out.printf("%s\t%s\t%s\t%s\t%d\n",
