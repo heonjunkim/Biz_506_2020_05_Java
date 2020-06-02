@@ -1,4 +1,4 @@
-package com.biz.classis.service;
+package com.biz.classes.service;
 /*
  * 클래스에 method를 선언해 두고
  * 클래스를 인스턴스로 생성하여 method를 호출하면

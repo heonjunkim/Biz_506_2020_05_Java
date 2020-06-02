@@ -1,7 +1,7 @@
 package com.biz.classis;
 
+import com.biz.classes.service.BookService;
 import com.biz.classis.model.BookVO;
-import com.biz.classis.service.BookService;
 
 public class ClassEx_11 {
 	
@@ -46,6 +46,7 @@ public class ClassEx_11 {
 		bookService.bookInfo(bookList[0]);
 		bookService.bookInfo(bookList[1]);
 		bookService.bookInfo(bookList[2]);
+		
 		
 		bookService.bookList(bookList);
 	}

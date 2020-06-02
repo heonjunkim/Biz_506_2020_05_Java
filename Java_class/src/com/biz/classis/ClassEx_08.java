@@ -1,6 +1,6 @@
 package com.biz.classis;
 
-import com.biz.classis.service.LineService;
+import com.biz.classes.service.LineService;
 
 public class ClassEx_08 {
 	

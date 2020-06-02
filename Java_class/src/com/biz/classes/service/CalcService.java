@@ -1,4 +1,4 @@
-package com.biz.classis.service;
+package com.biz.classes.service;
 
 /*
  * java 이전의 프로그래밍 방식에서 주로 사용한 코드

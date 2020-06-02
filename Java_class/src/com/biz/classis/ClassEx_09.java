@@ -1,7 +1,7 @@
 package com.biz.classis;
 
-import com.biz.classis.service.LineService;
-import com.biz.classis.service.ScoreService;
+import com.biz.classes.service.LineService;
+import com.biz.classes.service.ScoreService;
 
 public class ClassEx_09 {
 	

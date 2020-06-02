@@ -24,12 +24,12 @@ public class ClassEx_12 {
 		for(int i =0; i<List.length; i++) {
 			List[i].setStrdate("2020-06-01");	
 		}
+		List[0].setInput(5000);
 		List[2].setInput(5000);
-		List[1].setInput(5000);
 		
+		List[1].setOutput(1000);
 		List[3].setOutput(1000);
 		List[4].setOutput(1000);
-		List[0].setOutput(1000);
 				
 				
 				

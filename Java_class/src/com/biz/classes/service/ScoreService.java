@@ -1,4 +1,4 @@
-package com.biz.classis.service;
+package com.biz.classes.service;
 
 import com.biz.classis.model.ScoreVO;
 
