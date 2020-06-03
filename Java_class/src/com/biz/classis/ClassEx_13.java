@@ -2,7 +2,7 @@ package com.biz.classis;
 
 import com.biz.classes.service.BankService;
 import com.biz.classis.model.BankVO;
-import com.biz.classis.service.BankService;
+
 
 public class ClassEx_13 {
 
@@ -42,7 +42,8 @@ public class ClassEx_13 {
 		BankService bankService = new BankService();
 		bankService.bankList(bankList);
 		
-<<<<<<< HEAD
+
+		
 		BankVO bankList[] = new BankVO[5];
 		
 		
@@ -104,8 +105,7 @@ public class ClassEx_13 {
 		
 		bankService.bankList(bankList);
 		
-=======
->>>>>>> adee30639e6aafa4c47c235e1897f1a33a69e2d1
+
 		
 		
 
