@@ -18,8 +18,10 @@ public class ScoreServiceV2 {
 		
 			for(int i =0; i < scores.length; i++) {
 				int sum = this.scores[i].getKor();
-				sum += scores[i].getEng();
-				sum += scores[i]
+				sum += this.scores[i].getEng();
+				sum += this.scores[i].getMath();
+				sum += this.scores[i].getMusic();
+				this.scores[i].setSum(sum);
 			
 			}
 		}
@@ -27,30 +29,24 @@ public class ScoreServiceV2 {
 		
 			public void scoreAvg() {
 				for(int i =0; i < scores.length; i ++) {
-					 scores[i].setAvg( scores[i].getSum() / 4);
+					 int sum =this.scores[i].getSum();
+					 this.scores[i].setAvg(sum/4);
+					 
 				}
 			}
 			
 			
 			
 			public void scoreList() {
-				System.out.println("==================================================");
+				LineService line = new LineService();
+				int intLineLength =50;
+				
+				
+				System.out.println(line.do_line(intLineLength));
 				System.out.println("성적리스트");
-				System.out.println("--------------------------------------------------");
+				System.out.println(line.do_line(intLineLength));
 				System.out.println("학번\t국어\t영어\t수학\t음악\t총점\t평균");
-				System.out.println("--------------------------------------------------");
-				
-		
-			
-				
-				
-				for(int i =0; i <  scores.length; i ++) {
-					
-					
-					
-					System.out.printf("%s\t%d\t%d\t%d\t%d\t%d\t%d\n",
-							scores[i].getGrade(), scores[i].getKor(),scores[i].getEng(),scores[i].getMath(),scores[i].getMusic(),
-							scores[i].getSum(), scores[i].getAvg() );     }
+				System.out.println(line.single(intLineLength));
 				
 				int Korsum = 0;
 				int Engsum =0;
@@ -61,23 +57,50 @@ public class ScoreServiceV2 {
 				int sumsum =0;
 				int Avgsum =0;
 				
-				for(int i =0; i < scores.length; i ++) {
+				
+				for(int i =0; i <  this.scores.length; i ++) {
 					Korsum += scores[i].getKor();
 					Engsum += scores[i].getEng();
 					Mathsum += scores[i].getMath();
 					Musicsum += scores[i].getMusic();
-					sumsum += scores[i].getSum();  // 모든학생 총점의 총점
-					Avgsum += scores[i].getAvg();  // 평균의 총점
+					sumsum += scores[i].getSum();  
+					Avgsum += scores[i].getAvg();  
 							
-				}
+					
+					
+					
+					System.out.printf("%s\t%d\t%d\t%d\t%d\t%d\t%d\n",
+							scores[i].getGrade(), scores[i].getKor(),scores[i].getEng(),scores[i].getMath(),scores[i].getMusic(),
+							scores[i].getSum(), scores[i].getAvg() );     }
+				
+				System.out.println(line.do_line(intLineLength));
+				System.out.printf(
+						"%s\t%d\t%d\t%d\t%d\t%d\t%d\n",
+							"총점",
+							Korsum,
+							Engsum,
+							Mathsum,
+							Musicsum,
+							sumsum, 0
+				);
+				System.out.printf(
+						"%s\t%d\t%d\t%d\t%d\t%d\t%d\n",
+							"평균",
+							Korsum/scores.length,
+							Engsum/scores.length,
+							Mathsum/scores.length,
+							Musicsum/scores.length,
+							0, Avgsum//scores.length
+				);
+				System.out.println(line.do_line(intLineLength));
+				
+		
+				
+				
+				
+				
 				
 			
-				System.out.println("==================================================");
-				System.out.printf("총점\t%d\t%d\t%d\t%d\t%d\t%d\n",  Korsum, Engsum, Mathsum, Musicsum, sumsum, Avgsum);
-				System.out.printf("평균\t%d\t%d\t%d\t%d\t%d\t%d\n",Korsum/scores.length,Engsum/scores.length,Mathsum/scores.length,Musicsum/scores.length,
-						sumsum/scores.length, Avgsum/scores.length);
-				
-				
 			}
 	
 
