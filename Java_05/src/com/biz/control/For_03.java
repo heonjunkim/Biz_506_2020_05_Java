@@ -8,9 +8,10 @@ public class For_03 {
 		for( ;; ) {
 			
 			num++;
-			System.out.println(num);
+			
 			if(num > 10) { break;
 			}
+			System.out.println(num);
 		}
 		
 		System.out.println("============================");
@@ -18,9 +19,10 @@ public class For_03 {
 		for( ;; ) {
 			
 			num++;
+			System.out.println(num);
 			if(num > 10) { break;
 			}			
-			System.out.println(num);			
+						
 			}
 		
 

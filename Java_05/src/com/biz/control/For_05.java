@@ -8,7 +8,7 @@ public class For_05 {
 		int sum = 0;
 		for( ;; ) {
 			num++;
-			sum +=num; // sum = sum+num 의 축약형 명령문
+			sum +=num; // sum = sum+num		의 축약형 명령문
 			if(num >= 10) {
 				break;
 			}

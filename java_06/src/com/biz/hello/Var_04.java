@@ -10,7 +10,7 @@ public class Var_04 {
 		int num = rnd.nextInt(100) + 1;
 		for(int i = 2 ; i < num ; i++) {
 			if(num % i == 0) {
-				System.out.printf(" %d 로 나눈 나머지가 0이므로 %d는 소수가아님\n", i, num);
+				System.out.printf(" %d 로 나눈 나머지가 0이므로 %d는 소수가아님\n", i,num );
 				/*
 				 * 2 ~ num - 1 까지 범위의 값으로 
 				 * num를 나누어 한번이라도 나머지가 0이 아닌경우가 나타나면 
