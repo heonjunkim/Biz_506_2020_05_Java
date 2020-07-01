@@ -5,13 +5,14 @@ import java.io.IOException;
 
 
 
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class DaumBoxOffice {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException{
 		String baseurl = "http://ticket2.movie.daum.net/Movie/MovieRankList.aspx";
 		Document doc = Jsoup.connect(baseurl).get();
 		Elements movieList = doc.select("ul.list_boxthumb > li > a");
@@ -35,7 +36,7 @@ public class DaumBoxOffice {
 			System.out.println("영화제목: " +title);
 			System.out.println("URL: " + daumHref);
 			System.out.println("영화코드: " + daumCode);
-			System.out.println("123124");
+			
 			
 			
 		}
